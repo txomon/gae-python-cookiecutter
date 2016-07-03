@@ -1,0 +1,4 @@
+flask
+gcloud
+pymemcache
+six

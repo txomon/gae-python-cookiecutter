@@ -1,0 +1,8 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+service: {{cookiecutter.gae_service}}
+
+handlers:
+- url: /.*
+  script: {{cookiecutter.project_slug}}.server.wsgi
