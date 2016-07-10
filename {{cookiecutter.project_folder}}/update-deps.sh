@@ -6,3 +6,6 @@ if [[ 0 -ne $? ]]; then
 	exit 1
 fi
 pip install -t lib/ -r requirements.txt
+
+# We need to remove this file to avoid appengine complaining
+rm lib/setuptools/script\ \(dev\).tmpl
